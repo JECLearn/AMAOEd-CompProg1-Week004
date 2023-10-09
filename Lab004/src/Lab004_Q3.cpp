@@ -30,7 +30,20 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
+    // Variable declaration
+    string userName;
+    string userAddress;
 
+    // Ask for user input. We use the getline function to take the string
+    // from the input field.
+    cout << "What is your name?" << endl;
+    getline(cin, userName);
+
+    cout << "What is your address?" << endl;
+    getline(cin, userAddress);
+
+    // Display result to user
+    cout << "Hi, I am " + userName + ". " + "I live at " + userAddress + ". " << endl;
 
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting
