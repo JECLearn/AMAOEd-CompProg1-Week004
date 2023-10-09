@@ -8,10 +8,6 @@
  *      -- <description>
  *      -- <description>
  *      -- <description>
- *  - <yyyy/mm/dd> | <name>
- *      -- <description>
- *      -- <description>
- *      -- <description>
  * ****************************************************************/
 
 #include <cstdio>
