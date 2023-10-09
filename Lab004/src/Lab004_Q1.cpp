@@ -30,7 +30,15 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
+    // variable declaration
+    string userSection;
 
+    cout << "What is your section?" << endl;
+
+    // ask user for input    
+    cin >> userSection;
+
+    cout << "***Section: " + userSection + "***" << endl;
 
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting
