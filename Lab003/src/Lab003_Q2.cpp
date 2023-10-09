@@ -4,7 +4,7 @@
  * @app name: <Hello World>
  * @app desc: <C++ Learning>
  * @history:
- *  - <2023/10/09> | <Lab003 Question 1>
+ *  - <2023/10/09> | <Lab003 Question 2>
  *      -- <description>
  *      -- <description>
  *      -- <description>
@@ -34,6 +34,14 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
+    cout << "Hello" << endl;
+    cout << "World" << endl;
+    cout << "Hello" << endl;
+    cout << "World" << endl;
+    cout << "Hello" << endl;
+    cout << "World" << endl;
+    cout << "Hello" << endl;
+    cout << "World" << endl;
     cout << "Hello" << endl;
     cout << "World" << endl;
 
