@@ -34,16 +34,16 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
+    // One cout for Hello outputted in one line
     cout << "Hello" << endl;
-    cout << "World" << endl;
-    cout << "Hello" << endl;
-    cout << "World" << endl;
-    cout << "Hello" << endl;
-    cout << "World" << endl;
-    cout << "Hello" << endl;
-    cout << "World" << endl;
-    cout << "Hello" << endl;
-    cout << "World" << endl;
+
+    // 5 cout for World outputted in one line
+    cout << "W";
+    cout << "o";
+    cout << "r";
+    cout << "l";
+    cout << "d" << endl;
+
 
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting
