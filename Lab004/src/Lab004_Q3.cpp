@@ -32,12 +32,16 @@ int main() {
 
     // Variable declaration
     string userName;
+    string userPass;
     string userAddress;
 
     // Ask for user input. We use the getline function to take the string
     // from the input field.
     cout << "What is your name?" << endl;
     getline(cin, userName);
+
+    cout << "What is your password?" << endl;
+    getline(cin, userPass);
 
     cout << "What is your address?" << endl;
     getline(cin, userAddress);
