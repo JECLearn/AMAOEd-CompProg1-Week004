@@ -28,7 +28,25 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
+    //Variable declaration
+    float multiplicand, multiplier, product;
+    string result;
 
+    // Ask user for input
+    cout << "Let's multiply. Please enter the multiplicand." << endl;
+    cin >> multiplicand;
+
+    cout << "Please enter the multiplier." << endl;
+    cin >> multiplier;
+
+    // Multiplication
+    product = multiplicand * multiplier;
+
+    // Convert product to string type
+    result = to_string(product);
+
+    // Display result to user
+    cout << "Product: " + result << endl;
 
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting
