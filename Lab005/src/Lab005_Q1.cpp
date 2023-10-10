@@ -28,6 +28,37 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
+    // Variable declaration
+    int userInput;
+
+    // Ask user for input
+    cout << "Please enter an integer." << endl;
+    cin >> userInput;
+
+    // If statements
+    if (userInput == 0) {
+        cout << "Hello World";
+    } else if (userInput == 1) {
+
+        cout << "I am Groot" << endl;
+
+    } else if (userInput == 2) {
+        
+        cout << "To the Top" << endl;
+
+    } else if (userInput == 3) {
+        
+        cout << "Where is the horizon" << endl;
+
+    } else if (userInput == 4) {
+        
+        cout << "I don't know" << endl;
+
+    } else {
+
+        cout << "Yeah, I will." << endl;
+
+    }
 
 
     // ********************** DO NOT CHANGE **********************
