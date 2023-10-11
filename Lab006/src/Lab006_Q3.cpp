@@ -17,9 +17,38 @@ using namespace std;
 
 int main() {
 
+    // Variable declaration and initialization
+    int height;
+    int currentLine = 1;
 
+    // Ask user for input
+    cout << "Please enter the height of the inverted triangle." << endl;
+    cin >> height;
+    cout << "\n";
 
+    // DO-WHILE loop
+    do {
+        // Spaces
+        for (int i = 1; i < currentLine; i++) {
 
+            cout << " ";
+
+        }
+
+        // Asterisks
+        for (int j = currentLine; j <= height; j++) {
+
+            cout << "* ";
+
+        }
+
+        cout << "\n";
+        
+        currentLine++;
+
+    } while (currentLine <= height);
+    
+    cout << "\n";
 
     _pause();
     return EXIT_SUCCESS;
