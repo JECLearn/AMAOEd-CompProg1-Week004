@@ -4,8 +4,8 @@
  * @app name: <Lab 006>
  * @app desc: <C++ Learning>
  * @history:
- *  - <2023/10/10> | <Lab006 Question 1>
- *      -- Answered Question 1 of Lab005
+ *  - <2023/10/10> | <Lab006 Question 2>
+ *      -- Answered Question 2 of Lab002
  * ****************************************************************/
 
 #include <cstdio>
