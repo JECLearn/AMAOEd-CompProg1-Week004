@@ -15,7 +15,27 @@
 
 using namespace std;
 
+// division function
+int divide(int a, int b) {
+    if(b == 0) {
+        cout << "You cannot divide by zero.\n";
+        return 0;
+    }
+    return a / b;
+}
+
 int main() {
+
+    //
+    for(int i = 0; i <= 2; i++) {
+        int num1, num2;
+        cout << "Please enter two integers.\n";
+        cin >> num1 >> num2;
+
+        int quotient = divide(num1, num2);
+        
+        cout << "Quotient: " << quotient << endl;
+    }
 
     _pause();
     return EXIT_SUCCESS;
