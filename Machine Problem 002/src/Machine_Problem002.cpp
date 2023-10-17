@@ -49,18 +49,36 @@ int main() {
         seatGrid(seats);
 
         int userSeat;
-        cout << "Please enter seat number to reserve. Enter 0 to exit.\n";
+        cout << "\nPlease enter seat number to reserve. Enter 0 to exit.\n";
         cout << "Seat number: ";
         cin >> userSeat;
 
         if(userSeat == 0) {
-            cout << "Exiting...\n";
+            cout << "\nExiting...\n";
             break;
         }
 
         if(userSeat < 1 || userSeat > rows * columns) {
-            cout << "Invalid seat number. Please try again.\n";
+            cout << "\nInvalid seat number. Please try again.\n";
             continue;
+        }
+
+        bool seatReserved = false;
+        for(int i = 0; i < rows; i++) {
+            for(int j = 0; j < columns; j++) {
+                if(seats[i][j] == userSeat) {
+                    seats[i][j] = 0;
+                    seatReserved = true;
+                    cout << "\nSeat successfully reserved.\n";
+                    break;
+                }
+            }
+            if(seatReserved) {
+                break;
+            }
+        }
+        if(!seatReserved) {
+            cout << "\nSeat is taken. Please try again.\n";
         }
     }
 
