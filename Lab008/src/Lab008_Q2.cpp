@@ -16,7 +16,24 @@
 using namespace std;
 
 int main() {
+    short userNum;
 
+    // ask user for input
+    cout << "Please enter a value between 10 and 99.\n";
+    cin >> userNum;
+
+    // ensure user input is within required range
+    if(userNum < 10 || userNum > 99) {
+        cout << "Invalid. Please enter a value between 10 and 99.\n";
+        return 1;
+    }
+
+    // get 10s and 1s place
+    short tens = userNum / 10;
+    short ones = userNum % 10;
+
+    // display result to user
+    cout << "\n" << tens << " " << ones << "\n" << endl;
     _pause();
     return EXIT_SUCCESS;
 }
