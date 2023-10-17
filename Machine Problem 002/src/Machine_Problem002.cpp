@@ -44,5 +44,25 @@ int main() {
         }
     }
 
+    // loop handling user input
+    while(true) {
+        seatGrid(seats);
+
+        int userSeat;
+        cout << "Please enter seat number to reserve. Enter 0 to exit.\n";
+        cout << "Seat number: ";
+        cin >> userSeat;
+
+        if(userSeat == 0) {
+            cout << "Exiting...\n";
+            break;
+        }
+
+        if(userSeat < 1 || userSeat > rows * columns) {
+            cout << "Invalid seat number. Please try again.\n";
+            continue;
+        }
+    }
+
     return 0;
 }
