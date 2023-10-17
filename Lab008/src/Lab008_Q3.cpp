@@ -15,8 +15,24 @@
 
 using namespace std;
 
-int main() {
+// fibonacci function using recursion
+unsigned long long fibonacci(int n) {
+    if(n <= 1) {
+        return n;
+    } else {
+        return (fibonacci(n-1) + fibonacci(n-2));
+    }
+}
 
+int main() {
+    // ask user for input
+    int n;
+    cout << "Enter a non-zero integer for n in nth Fibonacci number: \n";
+    cin >> n;
+
+    // display result to user
+    cout << "\n" << n << "th Fibonacci number is " << fibonacci(n) << "\n\n";
+    
     _pause();
     return EXIT_SUCCESS;
 }
