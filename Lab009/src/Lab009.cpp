@@ -12,3 +12,34 @@
 #include <cstdlib>
 #include <iostream>
 
+using namespace std;
+// Question 1 LeggedAnimal class
+class LeggedAnimal {
+    private:
+        int legCount;
+        bool hasTail;
+        string furType;
+};
+
+// Question 2 Person class
+class Person {
+    private:
+        string name;
+        string address;
+        string gender;
+        int age;
+        string occupation;
+};
+
+// Question 3 Polygon class
+class Polygon {
+    private:
+        string name;
+        string color;
+        int sideCount;
+};
+
+int main() {
+
+    return 0;
+}
