@@ -56,8 +56,8 @@ class Student : public Person {
     public:
         Student(string n, string addr, string g, int a, string o,
                 string program, int year, string univ)
-            : Person(n, addr, g, a, o), academicProgram(program), collegeYear(year),
-                    university(univ) {}
+            : Person(n, addr, g, a, o), academicProgram(program),
+                    collegeYear(year), university(univ) {}
 
         void setAcademicProgram(string program) {
             academicProgram = program;
@@ -82,9 +82,40 @@ class Student : public Person {
         string getUniversity() {
             return university;
         }
+
 };
 
 int main() {
+    // instantiate object and user input variables
+    string studentProgram;
+    int studentYear;
+    string studentUniv;
+
+    Student student1("J. E. Cunanan", "143 Heaven St.", "Male", 35,
+                    "Student", "Computer Science", 2, "AMA");
+
+    // ask user for input
+    cout << "Enter academic program.\n";
+    getline(cin, studentProgram);
+    cout << "Enter university.\n";
+    getline(cin, studentUniv);
+    cout << "Enter college year.\n";
+    cin >> studentYear;
+
+    student1.setAcademicProgram(studentProgram);
+    student1.setCollegeYear(studentYear);
+    student1.setUniversity(studentUniv);
+
+    //displaying data using accessors
+    cout << "\nStudent Information\n\n";
+    cout << "Student Name:           " << student1.getName() << "\n";
+    cout << "Address:                " << student1.getAddress() << "\n";
+    cout << "Gender:                 " << student1.getGender() << "\n";
+    cout << "Age:                    " << student1.getAge() << "\n";
+    cout << "Occupation:             " << student1.getOccupation() << "\n";
+    cout << "Academic Program:       " << student1.getAcademicProgram() << "\n";
+    cout << "College Year:           " << student1.getCollegeYear() << "\n";
+    cout << "Enrolled University:    " << student1.getUniversity() << "\n\n";
 
     return 0;
 }
