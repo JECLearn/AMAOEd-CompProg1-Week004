@@ -4,7 +4,7 @@
  * @app name: <Lab 010>
  * @app desc: <AMA C++ Learning>
  * @history:
- *  - <Oct 23 2023> | <Lab011 Question 1>
+ *  - <Oct 24 2023> | <Lab011 Question 1>
  *      -- Answered Question 1 of Lab011
  * ****************************************************************/
 
