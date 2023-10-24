@@ -16,6 +16,19 @@
 using namespace std;
 
 int main() {
+    // initialize integer and pointer to the integer
+    int integer = 654321;
+    
+    // display integer value before update
+    cout << "Integer before update: " << integer << endl;
+    cout << "\n";
+
+    // use arithmetic to change the integer value
+    integer -= 626375;
+
+    // display integer value after update
+    cout << "Integer after update: " << integer << endl;
+    cout << "\n";
 
     _pause();
     return EXIT_SUCCESS;
