@@ -16,7 +16,20 @@
 using namespace std;
 
 int main() {
+    // declare uninitialized float variable
+    float firstFloat;
 
+    // use pointer to firstFloat and initialize second float variable
+    float* secondFloatPtr = &firstFloat;
+
+    // display address and values of both float variables
+    cout << "Logical address of firstFloat   : " << &firstFloat << endl;
+    cout << "Value of firstFloat             : " << firstFloat << endl;
+    cout << "\n";
+    cout << "Logical address of secondFloat   : " << secondFloatPtr << endl;
+    cout << "Value of secondFloat             : " << *secondFloatPtr << endl;
+    cout << "\n";
+    
     _pause();
     return EXIT_SUCCESS;
 }
