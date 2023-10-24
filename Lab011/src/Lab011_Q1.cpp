@@ -11,10 +11,18 @@
 #include <cstdio>
 #include <cstdlib>
 #include <iostream>
+#include "_pause.h"
 
 using namespace std;
 
 int main() {
+    // initialize integer variable
+    int variable = 900;
 
-    return 0;
+    // display variable and its memory address
+    cout << "Integer value           : " << variable << endl;
+    cout << "Integer Memory Address  : " << &variable << endl;
+
+    _pause();
+    return EXIT_SUCCESS;
 }
